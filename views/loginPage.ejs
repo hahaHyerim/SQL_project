@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성신여자대학교 로그인 시스템</title>
+    <style>
+        .loginBox{
+            box-sizing: border-box;
+            margin: 30px 15px 10px 15px;
+            border: 10px solid plum;
+            padding: 20px;
+            
+        }   
+
+        
+        p:nth-child(1){
+            margin-top: 15px;
+        }
+        p:nth-child(2){
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!--                    추후 수정가능                        -->
+    <form action="http://local/host/method.php" method="post" autocomplete="on">
+        <div class="loginBox">
+            <h1><img src="https://portal.sungshin.ac.kr/ssu/images/login/logo.png" alt="성신여대 로그인 로고"></h1>
+
+            <p>
+                <lable for ="lable_id"> 아이디:</lable>
+                <input id="lable_id" type="text" name="id" placeholder="아이디를 입력해주세요." autofocus required>
+            </p>    
+            <p>
+                <lable>비밀번호:</lable>
+                <input type="password" name="pw">
+                <input type="hidden" name="hide" value="secret" placeholder="비밀번호를 입력해주세요." autocomplete="off" required>
+                <input type="submit">
+            </p> 
+
+        </div>
+    </form>
+
+</body>
+</html>
